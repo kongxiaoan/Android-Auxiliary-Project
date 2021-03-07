@@ -1,0 +1,27 @@
+plugins {
+    id 'groovy'
+    id 'maven'
+}
+
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.6.1'
+
+    implementation 'org.ow2.asm:asm:7.2'
+    implementation 'org.ow2.asm:asm-commons:7.2'
+}
+
+group='lib.timemonitor'
+version='1.0.1'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //部署地址可以自己设置，既可以在本地，也可以在远程，这里设置为本地（项目根目录下的）
+            repository(url: uri('../custom_timemonitor_repo'))
+        }
+    }
+}

@@ -1,2 +1,4 @@
 rootProject.name = "Android-Auxiliary-Project"
 include ':app'
+include ':lib-time-monitor'
+include ':custom_log_plugin'

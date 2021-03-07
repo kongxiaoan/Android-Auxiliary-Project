@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: Android-Auxiliary-Project.lib-time-monitor.lib-time-monitor-1.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib-time-monitor/build/libs/lib-time-monitor-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
